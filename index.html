@@ -7,6 +7,44 @@
 
 <link rel="stylesheet" href="style.css">
 
+<style>
+
+.filters{
+text-align:center;
+margin:20px;
+}
+
+.filters button{
+margin:5px;
+}
+
+</style>
+
+<script>
+
+function filterCategory(category){
+
+let items = document.querySelectorAll(".card");
+
+items.forEach(card => {
+
+if(category === "all"){
+card.style.display="block";
+return;
+}
+
+if(card.classList.contains(category)){
+card.style.display="block";
+}else{
+card.style.display="none";
+}
+
+});
+
+}
+
+</script>
+
 </head>
 
 <body>
@@ -15,9 +53,23 @@
 Mini3D
 </header>
 
+<div class="filters">
+
+<button onclick="filterCategory('all')">Todos</button>
+<button onclick="filterCategory('cuadro')">Cuadros</button>
+<button onclick="filterCategory('deco')">Decoración</button>
+<button onclick="filterCategory('figura')">Figuras</button>
+<button onclick="filterCategory('iman')">Imanes</button>
+<button onclick="filterCategory('llavero')">Llaveros</button>
+<button onclick="filterCategory('mate')">Mates</button>
+<button onclick="filterCategory('posavaso')">Posavasos</button>
+<button onclick="filterCategory('accesorio')">Accesorios</button>
+
+</div>
+
 <section class="gallery">
 
-<div class="card">
+<div class="card cuadro">
 <img src="images/cuadro-jack.jpeg">
 <div class="card-content">
 <h3>Cuadro Jack</h3>
@@ -25,7 +77,7 @@ Mini3D
 </div>
 </div>
 
-<div class="card">
+<div class="card cuadro">
 <img src="images/cuadro-jason.jpeg">
 <div class="card-content">
 <h3>Cuadro Jason</h3>
@@ -33,7 +85,7 @@ Mini3D
 </div>
 </div>
 
-<div class="card">
+<div class="card deco">
 <img src="images/deco-mariposa.jpeg">
 <div class="card-content">
 <h3>Decoración Mariposa</h3>
@@ -41,7 +93,7 @@ Mini3D
 </div>
 </div>
 
-<div class="card">
+<div class="card figura">
 <img src="images/figura-chucky.jpeg">
 <div class="card-content">
 <h3>Figura Chucky</h3>
@@ -49,7 +101,7 @@ Mini3D
 </div>
 </div>
 
-<div class="card">
+<div class="card figura">
 <img src="images/figura-gato-it.jpeg">
 <div class="card-content">
 <h3>Figura Gato IT</h3>
@@ -57,7 +109,7 @@ Mini3D
 </div>
 </div>
 
-<div class="card">
+<div class="card iman">
 <img src="images/imanes-brilla-oscuridad.jpeg">
 <div class="card-content">
 <h3>Imanes Glow</h3>
@@ -65,7 +117,7 @@ Mini3D
 </div>
 </div>
 
-<div class="card">
+<div class="card iman">
 <img src="images/imanes-mario.jpeg">
 <div class="card-content">
 <h3>Imanes Mario</h3>
@@ -73,7 +125,7 @@ Mini3D
 </div>
 </div>
 
-<div class="card">
+<div class="card iman">
 <img src="images/imanes-terror.jpeg">
 <div class="card-content">
 <h3>Imanes Terror</h3>
@@ -81,7 +133,7 @@ Mini3D
 </div>
 </div>
 
-<div class="card">
+<div class="card llavero">
 <img src="images/llaveros-arcoiris.jpeg">
 <div class="card-content">
 <h3>Llavero Arcoiris</h3>
@@ -89,7 +141,7 @@ Mini3D
 </div>
 </div>
 
-<div class="card">
+<div class="card llavero">
 <img src="images/llaveros-monstera.jpeg">
 <div class="card-content">
 <h3>Llavero Monstera</h3>
@@ -97,7 +149,7 @@ Mini3D
 </div>
 </div>
 
-<div class="card">
+<div class="card llavero">
 <img src="images/llaveros.jpeg">
 <div class="card-content">
 <h3>Llavero</h3>
@@ -105,7 +157,7 @@ Mini3D
 </div>
 </div>
 
-<div class="card">
+<div class="card deco">
 <img src="images/marcalibro-terror.jpeg">
 <div class="card-content">
 <h3>Marcalibro Terror</h3>
@@ -113,7 +165,7 @@ Mini3D
 </div>
 </div>
 
-<div class="card">
+<div class="card mate">
 <img src="images/mate-caniche.jpeg">
 <div class="card-content">
 <h3>Mate Caniche</h3>
@@ -121,7 +173,7 @@ Mini3D
 </div>
 </div>
 
-<div class="card">
+<div class="card mate">
 <img src="images/mate-harry.jpeg">
 <div class="card-content">
 <h3>Mate Harry</h3>
@@ -129,7 +181,7 @@ Mini3D
 </div>
 </div>
 
-<div class="card">
+<div class="card mate">
 <img src="images/mate-harry1.jpeg">
 <div class="card-content">
 <h3>Mate Harry Variante</h3>
@@ -137,7 +189,7 @@ Mini3D
 </div>
 </div>
 
-<div class="card">
+<div class="card mate">
 <img src="images/mate-unicornio.jpeg">
 <div class="card-content">
 <h3>Mate Unicornio</h3>
@@ -145,7 +197,7 @@ Mini3D
 </div>
 </div>
 
-<div class="card">
+<div class="card posavaso">
 <img src="images/posavaso-casafantasmas.jpeg">
 <div class="card-content">
 <h3>Posavaso Ghostbusters</h3>
@@ -153,7 +205,7 @@ Mini3D
 </div>
 </div>
 
-<div class="card">
+<div class="card posavaso">
 <img src="images/posavaso-monstera.jpeg">
 <div class="card-content">
 <h3>Posavaso Monstera</h3>
@@ -161,7 +213,7 @@ Mini3D
 </div>
 </div>
 
-<div class="card">
+<div class="card accesorio">
 <img src="images/protector-airpod.jpeg">
 <div class="card-content">
 <h3>Protector AirPods</h3>
@@ -169,11 +221,37 @@ Mini3D
 </div>
 </div>
 
-<div class="card">
+<div class="card deco">
 <img src="images/reloj.jpeg">
 <div class="card-content">
 <h3>Reloj</h3>
 <button>Buy</button>
+</div>
+</div>
+
+</section>
+
+<hr>
+
+<header>
+STL Downloads
+</header>
+
+<section class="gallery">
+
+<div class="card">
+<img src="images/figura-chucky.jpeg">
+<div class="card-content">
+<h3>Chucky STL</h3>
+<button>Download STL</button>
+</div>
+</div>
+
+<div class="card">
+<img src="images/llaveros-arcoiris.jpeg">
+<div class="card-content">
+<h3>Rainbow Keychain STL</h3>
+<button>Download STL</button>
 </div>
 </div>
 
