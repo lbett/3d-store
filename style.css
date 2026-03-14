@@ -1,9 +1,11 @@
 body{
-font-family:Arial, sans-serif;
+font-family: Arial, sans-serif;
 background:#0f0f0f;
 color:white;
 margin:0;
 }
+
+/* HEADER */
 
 header{
 text-align:center;
@@ -18,7 +20,10 @@ font-size:40px;
 
 header p{
 opacity:0.7;
+margin-top:10px;
 }
+
+/* FILTROS */
 
 .filters{
 text-align:center;
@@ -32,12 +37,16 @@ border:none;
 background:#222;
 color:white;
 cursor:pointer;
-border-radius:5px;
+border-radius:6px;
+font-size:14px;
+transition:0.2s;
 }
 
 .filters button:hover{
 background:#444;
 }
+
+/* GALERIA */
 
 .gallery{
 display:grid;
@@ -45,6 +54,8 @@ grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
 gap:30px;
 padding:40px;
 }
+
+/* TARJETAS */
 
 .card{
 background:#1c1c1c;
@@ -55,15 +66,20 @@ box-shadow:0 5px 15px rgba(0,0,0,0.5);
 }
 
 .card:hover{
-transform:scale(1.05);
+transform:translateY(-5px) scale(1.02);
 }
+
+/* IMAGENES */
 
 .card img{
 width:100%;
 height:220px;
 object-fit:cover;
 cursor:pointer;
+display:block;
 }
+
+/* CONTENIDO */
 
 .card-content{
 padding:20px;
@@ -72,26 +88,27 @@ text-align:center;
 
 .card h3{
 margin-bottom:15px;
+font-size:18px;
 }
+
+/* BOTONES */
 
 button{
 background:#00c853;
 border:none;
 padding:10px 20px;
 color:white;
-border-radius:5px;
+border-radius:6px;
 cursor:pointer;
+font-size:14px;
+transition:0.2s;
 }
 
 button:hover{
 background:#00e676;
 }
 
-.section-title{
-text-align:center;
-font-size:30px;
-margin-top:40px;
-}
+/* LIGHTBOX */
 
 #lightbox{
 display:none;
@@ -100,14 +117,20 @@ top:0;
 left:0;
 width:100%;
 height:100%;
-background:rgba(0,0,0,0.9);
+background:rgba(0,0,0,0.95);
 justify-content:center;
 align-items:center;
 z-index:999;
+cursor:zoom-out;
+padding:20px;
 }
 
 #lightbox img{
-max-width:90%;
-max-height:90%;
+max-width:90vw;
+max-height:90vh;
+width:auto;
+height:auto;
+object-fit:contain;
 border-radius:10px;
+box-shadow:0 10px 40px rgba(0,0,0,0.8);
 }
