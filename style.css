@@ -8,7 +8,6 @@ color:white;
 }
 
 
-
 .hero{
 
 height:40vh;
@@ -22,14 +21,12 @@ gap:10px;
 }
 
 
-
 .hero h1{
 
 font-size:42px;
 margin:0;
 
 }
-
 
 
 .insta-user{
@@ -42,14 +39,12 @@ font-size:18px;
 }
 
 
-
 .search-label{
 
 margin-top:10px;
 font-weight:bold;
 
 }
-
 
 
 #search{
@@ -63,13 +58,11 @@ border:none;
 }
 
 
-
 .products-section{
 
 padding:40px;
 
 }
-
 
 
 .filters{
@@ -78,7 +71,6 @@ text-align:center;
 margin-bottom:30px;
 
 }
-
 
 
 .filters button{
@@ -92,7 +84,6 @@ cursor:pointer;
 }
 
 
-
 .gallery{
 
 display:grid;
@@ -100,7 +91,6 @@ grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 gap:20px;
 
 }
-
 
 
 .card{
@@ -114,13 +104,11 @@ cursor:pointer;
 }
 
 
-
 .card:hover{
 
 transform:scale(1.05);
 
 }
-
 
 
 .card img{
@@ -132,14 +120,12 @@ object-fit:cover;
 }
 
 
-
 .card h3{
 
 padding:10px;
 text-align:center;
 
 }
-
 
 
 .about{
@@ -151,7 +137,6 @@ background:#111;
 }
 
 
-
 footer{
 
 text-align:center;
@@ -159,7 +144,6 @@ padding:30px;
 background:black;
 
 }
-
 
 
 .instagram-float{
@@ -176,6 +160,14 @@ text-decoration:none;
 }
 
 
+.copyright{
+
+margin-top:15px;
+font-size:14px;
+color:#888;
+
+}
+
 
 #lightbox{
 
@@ -190,7 +182,6 @@ justify-content:center;
 align-items:center;
 
 }
-
 
 
 #lightbox img{
