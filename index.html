@@ -1,426 +1,277 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
 
-<title>Mini3D</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MiniThreeDGeek</title>
+
+<meta name="description" content="Impresión 3D en Uruguay. Figuras, mates, llaveros y decoración impresos en 3D.">
 
 <link rel="stylesheet" href="style.css">
-
-<script>
-
-function filterCategory(category){
-
-let items = document.querySelectorAll(".card");
-
-items.forEach(card => {
-
-if(category === "all"){
-card.style.display="block";
-return;
-}
-
-if(card.classList.contains(category)){
-card.style.display="block";
-}else{
-card.style.display="none";
-}
-
-});
-
-}
-
-function openLightbox(src){
-document.getElementById("lightbox").style.display="flex";
-document.getElementById("lightbox-img").src=src;
-}
-
-function closeLightbox(){
-document.getElementById("lightbox").style.display="none";
-}
-
-</script>
 
 </head>
 
 <body>
 
-<header>
+<nav class="navbar">
+<div class="logo">MiniThreeDGeek</div>
 
-<h1>Mini3D</h1>
-
-<p>
-Diseños impresos en 3D
-</p>
-
-</header>
-
-
-<div class="filters">
-
-<button onclick="filterCategory('all')">Todos</button>
-<button onclick="filterCategory('cuadro')">Cuadros</button>
-<button onclick="filterCategory('figura')">Figuras</button>
-<button onclick="filterCategory('iman')">Imanes</button>
-<button onclick="filterCategory('llavero')">Llaveros</button>
-<button onclick="filterCategory('mate')">Mates</button>
-<button onclick="filterCategory('posavaso')">Posavasos</button>
-<button onclick="filterCategory('deco')">Decoración</button>
-<button onclick="filterCategory('accesorio')">Accesorios</button>
-
-</div>
-
-
-<section class="gallery">
-
-
-<div class="card cuadro">
-
-<div class="image-container">
-<img src="images/cuadro-jack.jpeg">
-<div class="overlay">
-<button onclick="openLightbox('images/cuadro-jack.jpeg')">Ver</button>
-</div>
-</div>
-
-<div class="card-content">
-<h3>Cuadro Jack</h3>
-<button>Buy</button>
-</div>
-
-</div>
-
-
-<div class="card cuadro">
-
-<div class="image-container">
-<img src="images/cuadro-jason.jpeg">
-<div class="overlay">
-<button onclick="openLightbox('images/cuadro-jason.jpeg')">Ver</button>
-</div>
-</div>
-
-<div class="card-content">
-<h3>Cuadro Jason</h3>
-<button>Buy</button>
-</div>
-
-</div>
-
-
-<div class="card deco">
-
-<div class="image-container">
-<img src="images/deco-mariposa.jpeg">
-<div class="overlay">
-<button onclick="openLightbox('images/deco-mariposa.jpeg')">Ver</button>
-</div>
-</div>
-
-<div class="card-content">
-<h3>Decoración Mariposa</h3>
-<button>Buy</button>
-</div>
-
-</div>
-
-
-<div class="card figura">
-
-<div class="image-container">
-<img src="images/figura-chucky.jpeg">
-<div class="overlay">
-<button onclick="openLightbox('images/figura-chucky.jpeg')">Ver</button>
-</div>
-</div>
-
-<div class="card-content">
-<h3>Figura Chucky</h3>
-<button>Buy</button>
-</div>
-
-</div>
-
-
-<div class="card figura">
-
-<div class="image-container">
-<img src="images/figura-gato-it.jpeg">
-<div class="overlay">
-<button onclick="openLightbox('images/figura-gato-it.jpeg')">Ver</button>
-</div>
-</div>
-
-<div class="card-content">
-<h3>Figura Gato IT</h3>
-<button>Buy</button>
-</div>
-
-</div>
-
-
-<div class="card iman">
-
-<div class="image-container">
-<img src="images/imanes-brilla-oscuridad.jpeg">
-<div class="overlay">
-<button onclick="openLightbox('images/imanes-brilla-oscuridad.jpeg')">Ver</button>
-</div>
-</div>
-
-<div class="card-content">
-<h3>Imanes Glow</h3>
-<button>Buy</button>
-</div>
-
-</div>
-
-
-<div class="card iman">
-
-<div class="image-container">
-<img src="images/imanes-mario.jpeg">
-<div class="overlay">
-<button onclick="openLightbox('images/imanes-mario.jpeg')">Ver</button>
-</div>
-</div>
-
-<div class="card-content">
-<h3>Imanes Mario</h3>
-<button>Buy</button>
-</div>
-
-</div>
-
-
-<div class="card iman">
-
-<div class="image-container">
-<img src="images/imanes-terror.jpeg">
-<div class="overlay">
-<button onclick="openLightbox('images/imanes-terror.jpeg')">Ver</button>
-</div>
-</div>
-
-<div class="card-content">
-<h3>Imanes Terror</h3>
-<button>Buy</button>
-</div>
-
-</div>
-
-
-<div class="card llavero">
-
-<div class="image-container">
-<img src="images/llaveros-arcoiris.jpeg">
-<div class="overlay">
-<button onclick="openLightbox('images/llaveros-arcoiris.jpeg')">Ver</button>
-</div>
-</div>
-
-<div class="card-content">
-<h3>Llavero Arcoiris</h3>
-<button>Buy</button>
-</div>
-
-</div>
-
-
-<div class="card llavero">
-
-<div class="image-container">
-<img src="images/llaveros-monstera.jpeg">
-<div class="overlay">
-<button onclick="openLightbox('images/llaveros-monstera.jpeg')">Ver</button>
-</div>
-</div>
-
-<div class="card-content">
-<h3>Llavero Monstera</h3>
-<button>Buy</button>
-</div>
-
-</div>
-
-
-<div class="card llavero">
-
-<div class="image-container">
-<img src="images/llaveros.jpeg">
-<div class="overlay">
-<button onclick="openLightbox('images/llaveros.jpeg')">Ver</button>
-</div>
-</div>
-
-<div class="card-content">
-<h3>Llavero</h3>
-<button>Buy</button>
-</div>
-
-</div>
-
-
-<div class="card deco">
-
-<div class="image-container">
-<img src="images/marcalibro-terror.jpeg">
-<div class="overlay">
-<button onclick="openLightbox('images/marcalibro-terror.jpeg')">Ver</button>
-</div>
-</div>
-
-<div class="card-content">
-<h3>Marcalibro Terror</h3>
-<button>Buy</button>
-</div>
-
-</div>
-
-
-<div class="card mate">
-
-<div class="image-container">
-<img src="images/mate-caniche.jpeg">
-<div class="overlay">
-<button onclick="openLightbox('images/mate-caniche.jpeg')">Ver</button>
-</div>
-</div>
-
-<div class="card-content">
-<h3>Mate Caniche</h3>
-<button>Buy</button>
-</div>
-
-</div>
-
-
-<div class="card mate">
-
-<div class="image-container">
-<img src="images/mate-harry.jpeg">
-<div class="overlay">
-<button onclick="openLightbox('images/mate-harry.jpeg')">Ver</button>
-</div>
-</div>
-
-<div class="card-content">
-<h3>Mate Harry</h3>
-<button>Buy</button>
-</div>
-
-</div>
-
-
-<div class="card mate">
-
-<div class="image-container">
-<img src="images/mate-harry1.jpeg">
-<div class="overlay">
-<button onclick="openLightbox('images/mate-harry1.jpeg')">Ver</button>
+<div class="menu">
+<a href="#productos">Productos</a>
+<a href="#sobre">Sobre mí</a>
+<a href="https://instagram.com/minithreedgeek" target="_blank">Instagram</a>
 </div>
-</div>
-
-<div class="card-content">
-<h3>Mate Harry Variante</h3>
-<button>Buy</button>
-</div>
-
-</div>
-
-
-<div class="card mate">
-
-<div class="image-container">
-<img src="images/mate-unicornio.jpeg">
-<div class="overlay">
-<button onclick="openLightbox('images/mate-unicornio.jpeg')">Ver</button>
-</div>
-</div>
-
-<div class="card-content">
-<h3>Mate Unicornio</h3>
-<button>Buy</button>
-</div>
-
-</div>
-
-
-<div class="card posavaso">
-
-<div class="image-container">
-<img src="images/posavaso-casafantasmas.jpeg">
-<div class="overlay">
-<button onclick="openLightbox('images/posavaso-casafantasmas.jpeg')">Ver</button>
-</div>
-</div>
-
-<div class="card-content">
-<h3>Posavaso Ghostbusters</h3>
-<button>Buy</button>
-</div>
-
-</div>
+</nav>
 
 
-<div class="card posavaso">
+<section class="hero">
 
-<div class="image-container">
-<img src="images/posavaso-monstera.jpeg">
-<div class="overlay">
-<button onclick="openLightbox('images/posavaso-monstera.jpeg')">Ver</button>
-</div>
-</div>
-
-<div class="card-content">
-<h3>Posavaso Monstera</h3>
-<button>Buy</button>
-</div>
-
-</div>
-
-
-<div class="card accesorio">
-
-<div class="image-container">
-<img src="images/protector-airpod.jpeg">
-<div class="overlay">
-<button onclick="openLightbox('images/protector-airpod.jpeg')">Ver</button>
-</div>
-</div>
+<h1>MiniThreeDGeek</h1>
 
-<div class="card-content">
-<h3>Protector AirPods</h3>
-<button>Buy</button>
-</div>
-
-</div>
-
-
-<div class="card deco">
-
-<div class="image-container">
-<img src="images/reloj.jpeg">
-<div class="overlay">
-<button onclick="openLightbox('images/reloj.jpeg')">Ver</button>
-</div>
-</div>
-
-<div class="card-content">
-<h3>Reloj</h3>
-<button>Buy</button>
-</div>
-
-</div>
+<p>Impresión 3D creativa</p>
 
+<a class="hero-btn" href="https://instagram.com/minithreedgeek" target="_blank">
+Ver en Instagram
+</a>
 
 </section>
 
 
-<div id="lightbox" onclick="closeLightbox()">
+<section id="productos" class="products-section">
+
+<h2>Productos</h2>
+
+
+<input type="text" id="search" placeholder="Buscar producto...">
+
+
+<div class="filters">
+
+<button onclick="filterSelection('all')">Todos</button>
+<button onclick="filterSelection('figura')">Figuras</button>
+<button onclick="filterSelection('mate')">Mates</button>
+<button onclick="filterSelection('llavero')">Llaveros</button>
+<button onclick="filterSelection('deco')">Decoración</button>
+
+</div>
+
+
+
+<div class="gallery">
+
+
+<div class="card figura">
+<img src="images/figura-chucky.jpeg">
+<h3>Figura Chucky</h3>
+</div>
+
+<div class="card figura">
+<img src="images/figura-gato-it.jpeg">
+<h3>Figura Gato IT</h3>
+</div>
+
+<div class="card deco">
+<img src="images/cuadro-jack.jpeg">
+<h3>Cuadro Jack</h3>
+</div>
+
+<div class="card deco">
+<img src="images/cuadro-jason.jpeg">
+<h3>Cuadro Jason</h3>
+</div>
+
+<div class="card deco">
+<img src="images/deco-mariposa.jpeg">
+<h3>Decoración Mariposa</h3>
+</div>
+
+<div class="card deco">
+<img src="images/imanes-brilla-oscuridad.jpeg">
+<h3>Imanes Glow</h3>
+</div>
+
+<div class="card deco">
+<img src="images/imanes-mario.jpeg">
+<h3>Imanes Mario</h3>
+</div>
+
+<div class="card deco">
+<img src="images/imanes-terror.jpeg">
+<h3>Imanes Terror</h3>
+</div>
+
+<div class="card llavero">
+<img src="images/llaveros-arcoiris.jpeg">
+<h3>Llavero Arcoiris</h3>
+</div>
+
+<div class="card llavero">
+<img src="images/llaveros-monstera.jpeg">
+<h3>Llavero Monstera</h3>
+</div>
+
+<div class="card llavero">
+<img src="images/llaveros.jpeg">
+<h3>Llavero</h3>
+</div>
+
+<div class="card deco">
+<img src="images/marcalibro-terror.jpeg">
+<h3>Marcalibro Terror</h3>
+</div>
+
+<div class="card mate">
+<img src="images/mate-caniche.jpeg">
+<h3>Mate Caniche</h3>
+</div>
+
+<div class="card mate">
+<img src="images/mate-harry.jpeg">
+<h3>Mate Harry</h3>
+</div>
+
+<div class="card mate">
+<img src="images/mate-harry1.jpeg">
+<h3>Mate Harry Variante</h3>
+</div>
+
+<div class="card mate">
+<img src="images/mate-unicornio.jpeg">
+<h3>Mate Unicornio</h3>
+</div>
+
+<div class="card deco">
+<img src="images/posavaso-casafantasmas.jpeg">
+<h3>Posavaso Ghostbusters</h3>
+</div>
+
+<div class="card deco">
+<img src="images/posavaso-monstera.jpeg">
+<h3>Posavaso Monstera</h3>
+</div>
+
+<div class="card deco">
+<img src="images/protector-airpod.jpeg">
+<h3>Protector AirPods</h3>
+</div>
+
+<div class="card deco">
+<img src="images/reloj.jpeg">
+<h3>Reloj</h3>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="sobre" class="about">
+
+<h2>Sobre MiniThreeDGeek</h2>
+
+<p>
+Diseño y fabrico piezas en impresión 3D desde Uruguay.
+Cada modelo es creado con cuidado y producido en impresoras de alta precisión.
+</p>
+
+</section>
+
+
+
+<footer>
+
+<p>MiniThreeDGeek</p>
+
+<p>Impresión 3D • Uruguay</p>
+
+<a href="https://instagram.com/minithreedgeek" target="_blank">
+Instagram
+</a>
+
+</footer>
+
+
+
+<a class="instagram-float" href="https://instagram.com/minithreedgeek" target="_blank">
+Instagram
+</a>
+
+
+<div id="lightbox">
 <img id="lightbox-img">
 </div>
 
+
+
+<script>
+
+function filterSelection(category) {
+
+let cards = document.querySelectorAll(".card")
+
+cards.forEach(card => {
+
+if(category === "all"){
+
+card.style.display="block"
+
+}else{
+
+if(card.classList.contains(category)){
+card.style.display="block"
+}else{
+card.style.display="none"
+}
+
+}
+
+})
+
+}
+
+
+document.getElementById("search").addEventListener("keyup", function() {
+
+let value = this.value.toLowerCase()
+
+let cards = document.querySelectorAll(".card")
+
+cards.forEach(card => {
+
+let text = card.innerText.toLowerCase()
+
+card.style.display = text.includes(value) ? "block" : "none"
+
+})
+
+})
+
+
+let images = document.querySelectorAll(".card img")
+let lightbox = document.getElementById("lightbox")
+let lightboxImg = document.getElementById("lightbox-img")
+
+images.forEach(img => {
+
+img.addEventListener("click", () => {
+
+lightbox.style.display = "flex"
+lightboxImg.src = img.src
+
+})
+
+})
+
+lightbox.addEventListener("click", () => {
+
+lightbox.style.display="none"
+
+})
+
+</script>
 
 </body>
 
